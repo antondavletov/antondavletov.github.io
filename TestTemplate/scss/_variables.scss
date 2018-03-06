@@ -1,0 +1,27 @@
+@import "fonts";
+// colors
+
+$black: black;
+
+// main 
+$max-width: 1024px; 
+
+$font-default: Arial, sans-serif; 
+$font-custom: 'Open Sans', sans-serif; 
+$font-roboto: 'roboto', sans-serif; 
+$font-roboto-bold: 'roboto-bold', sans-serif; 
+
+// mixins
+
+@mixin center_transform() {
+  	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%, -50%);
+}
+
+@mixin vertical_center_transform() {
+  	position:absolute;
+	left:0;top:50%;
+	width: 100%;
+	transform:translate(0, -50%);
+}

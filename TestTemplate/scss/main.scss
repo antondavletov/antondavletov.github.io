@@ -1,0 +1,181 @@
+@import "fonts";
+@import "variables";
+// @import "media"; в конец
+
+
+// ============ Default Style ============ //
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+	outline:none;
+	text-decoration: none;
+} 
+
+button,  
+button:active,  
+button:focus { 
+	border: none;
+	outline: none; 
+} 
+
+button, input, link, textarea {
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+	&:hover {
+		outline: none;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 14px;
+	min-width: 320px;
+	line-height: 1.65;
+	font-family: $font-default;
+	overflow-x: hidden;
+}
+
+// .wrapper{
+// 	max-width: $max-width;
+// 	padding: 0 20px 0 20px;
+// 	margin: 0 auto;
+// 	position: relative;
+// }
+
+// .clearfix:after {
+// 	content: ".";
+// 	display: block;
+// 	height: 0;
+// 	clear: both;
+// 	visibility: hidden;
+// }
+
+.custom-font {
+	font-family: $font-custom;
+	font-weight: 700;
+	background-color: $black;
+}
+.custom-mixins {
+	font-family: $font-roboto;
+}
+
+// Custom Bootstrap
+
+@media (min-width:768px){
+	.container{width:750px;}
+};
+@media (min-width:992px){
+		.container{width:970px;}
+};
+@media (min-width:1200px){
+	.container{width:1024px}
+};
+
+// ============ End Default Style ============ //
+
+// Main Style
+
+.header {
+	top:0;
+	right: 0;
+	left:0;
+	z-index: 9999;
+}
+
+.navigation {
+	width: 100%;
+	max-width: 1024px;
+	height: 40px;
+	background-color: pink;
+	border:1px solid red;
+	z-index: 1;
+	ul {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		list-style:none;
+		li {
+			line-height: 38px;
+			width: 100px;
+			display: inline-block;
+			a {
+				text-align: center;
+				color: white;
+				display: block;
+				background-color: green;
+				&:hover {
+					background-color: red;
+				}
+			}
+		}
+	}
+}
+
+.aside {
+	&-left {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	max-width: 300px;
+	transform:translate(0, -50%);
+	background-color: blue;
+	z-index: 1;
+	&-visible {
+		display: block;
+		}
+	}
+	&-right {
+		display: none;
+		position: fixed;
+		top: 50%;
+		right: 0;
+		width: 100%;
+		max-width: 300px;
+		transform:translate(0, -50%);
+		background-color: blue;
+		z-index: 1;
+		&-visible {
+		display: block;
+		}
+	}
+}
+
+.main {
+	&-page-desc {
+		margin: 10px 0;
+		min-height: 100px;
+		background-color: yellow;
+	}
+	&-content {
+		background-color: red;
+		margin-bottom: 10px;
+	}
+	&-visible-block {
+		background-color: darkblue;
+		height: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+.footer {
+	background-color: cyan;
+	max-height: 30px;
+}
+
+
