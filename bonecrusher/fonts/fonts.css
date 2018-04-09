@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-ExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
