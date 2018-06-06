@@ -1,0 +1,8 @@
+@import "mixins";
+
+@include font-face("proxima", "../fonts/ProximaReg/ProximaNova-Regular");
+@include font-face("proxima-bold", "../fonts/ProximaBold/ProximaNova-Bold", bold);
+@include font-face("myriad", "../fonts/MyriadProRegular/MyriadPro-Regular");
+
+
+
