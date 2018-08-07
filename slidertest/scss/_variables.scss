@@ -1,0 +1,26 @@
+@import "fonts";
+// colors
+
+$black: black;
+
+// main 
+$max-width: 1024px; 
+
+$font-default: 'circe', sans-serif; 
+$font-custom: 'circe-bold', sans-serif; 
+$font-custom-2: 'circe-light', sans-serif; 
+
+// mixins
+
+@mixin center_transform() {
+  	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%, -50%);
+}
+
+@mixin vertical_center_transform() {
+  	position:absolute;
+	left:0;top:50%;
+	width: 100%;
+	transform:translate(0, -50%);
+}
