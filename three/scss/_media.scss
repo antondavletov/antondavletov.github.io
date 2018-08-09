@@ -1,0 +1,215 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	.letapane {
+		br{
+			display: none;
+		}
+	}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+.letapane {
+	.img-bg-pi {
+		height:220px;
+	}
+}
+.letapane {
+	.img-bg-pi{
+		background: url('../img/pivovar960.png') center center no-repeat;
+		background-size: cover;
+		}
+    }	
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+.main-space {
+	font-size: 16px;
+}
+
+.contacts {
+	p {
+		font-size: 16px;
+	}
+}
+
+.letapane {
+	br {
+		display: none;
+	}
+	.img-bg {
+		height: 200px;
+	}
+	.img-bg-pi {
+		height:180px;
+	}
+}
+
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}
+
+}
+
+@media only screen and (max-width : 650px) {
+
+.slide-wrap {
+  width: 450px;
+  height: 450px;
+}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+
+.slide-wrap {
+	width: 350px;
+	height: 350px;
+}
+
+.slide-wrap {
+	.pos1 {
+		width: 40%;
+		left: -4%;
+	}
+	.pos2 {
+		width: 60%;
+		left: 0%;
+	}
+	.pos3 {
+		width: 75%;
+		left: 12.5%;
+	}
+	.pos4 {
+		width: 60%;
+		right: 0%;
+	}
+	.pos5 {
+		width: 40%;
+		right: -4%;
+	}
+}
+
+.prev {
+	left: 0px;
+}
+.next {
+	right: 10px;
+}
+
+
+.header-burger-menu {
+	a:after {
+		width: 70%;
+	}
+}
+
+.main-space {
+	font-size: 14px;
+	br {
+		display: none;
+	}
+	.br-480{
+		display: block;
+	}
+	img {
+		width: 110%;
+		margin-top: -30%;
+		margin-left: -10%;
+	}
+}
+
+.letapane {
+	br {
+		display: none;
+	}
+	.br-480{
+		display: block;
+	}
+	.img-bg {
+		background-image: url('../img/leta-pane480.png');
+		height: 180px;
+	}
+	.img-bg-pi {
+		height:180px;
+	}
+}
+
+.letapane-cont {
+	p {
+		font-size: 14px;
+	}
+	a {
+		font-size: 14px;
+	}
+}
+
+.voda-cont {
+	font-size: 14px;
+	br {
+		display: none;
+	}
+}
+
+}
+
+@media only screen and (max-width : 378px) {
+
+// .inner {
+// 	width: 80%;
+// }
+
+.next {
+	right: 0px;
+}
+.slide-wrap {
+	width: 300px;
+}
+
+.slide-wrap {
+	.pos1 {
+		width: 40%;
+		left: -4%;
+	}
+	.pos2 {
+		width: 60%;
+		left: 0%;
+	}
+	.pos3 {
+		width: 75%;
+		left: 12.5%;
+	}
+	.pos4 {
+		width: 60%;
+		right: 0%;
+	}
+	.pos5 {
+		width: 40%;
+		right: -2%;
+	}
+}
+
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.img-bg-pi {
+		height:160px;
+	}
+}
