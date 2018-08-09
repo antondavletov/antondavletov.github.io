@@ -69,15 +69,15 @@ $(document).ready(function() {
 
 //высота блоков цены конец
 
-// плавный скролл
+// // плавный скролл
 
-	$('.link-scroll').click(function(){
-        event.preventDefault();
-        var el = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(el).offset().top}, 1000);
-        return false;
-        });
+// 	$('.link-scroll').click(function(){
+//         event.preventDefault();
+//         var el = $(this).attr('href');
+//         $('html, body').animate({
+//             scrollTop: $(el).offset().top}, 1000);
+//         return false;
+//         });
 
 // плавный скролл закончился
 
