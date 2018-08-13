@@ -135,12 +135,7 @@
 
 
 			// Remove on iOS
-			if( iOS ) {
-				// Unset sources to prevent them from continuing to download
-				$video.attr('src', '');
-				$video.find('source').attr('src', '');
-				$video.remove();
-			}
+			
 
 
 			// Mimic background-size: cover with video element
