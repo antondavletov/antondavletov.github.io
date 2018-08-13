@@ -12,7 +12,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/jquery.background-video.css">
 	<link rel="stylesheet" href="../css/main.min.css">
 
 </head>
@@ -48,10 +47,8 @@
 			</div>
 		</section>
 
-		<section class="main element-with-video-bg jquery-background-video-wrapper">
-			<video class="my-background-video jquery-background-video" loop autoplay muted poster="../img/main-bg.png">
-				<source src="../video/Nature's Waterfall Footage comp.mp4" type="video/mp4">
-			</video>
+		<section class="main">
+		
 			
 			<div class="container">
 				<div class="row">
@@ -91,8 +88,8 @@
 	<script src="../js/jquery-1.12.4.min.js"></script>
 	<script src="../js/jquery.vide.js"></script>
 	<script src="../js/commom.js"></script>
-	<script src="../js/jquery.background-video.js"></script>
-	<script>
+<!-- 	<script src="../js/jquery.background-video.js"></script> -->
+<!-- 	<script>
 		$('.my-background-video').bgVideo({
 	fullScreen: false, // Sets the video to be fixed to the full window - your <video> and it's container should be direct descendents of the <body> tag
 	fadeIn: 500, // Milliseconds to fade video in/out (0 for no fade)
@@ -105,13 +102,13 @@
 	pausePlayXOffset: '15px', // pixels or percent from side - ignored if positioned center
 	pausePlayYOffset: '15px' // pixels or percent from top/bottom - ignored if positioned center
 });
-	</script>
-	<!-- <script>
+	</script> -->
+	<script>
 		$('.main').vide("../video/Nature's Waterfall Footage comp.mp4", {
 			
 
 		});
-	</script> -->
+	</script>
 
 
 </body>
