@@ -1,0 +1,115 @@
+@import "fonts";
+@import "variables";
+
+$black: #1d1d1d;
+
+
+// ============ Default Style ============ //
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+	outline:none;
+	text-decoration: none;
+} 
+
+button,  
+button:active,  
+button:focus { 
+	border: none;
+	outline: none; 
+} 
+
+button, input, link, textarea {
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+	&:hover {
+		outline: none;
+	}
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+	min-width: 370px;
+	line-height: 1.7;
+	font-family: $font-default;
+	overflow-x: hidden;
+}
+
+.btn {
+	display: inline-block;
+	padding: 16px 59px;
+	background-color: #ff2d2d;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:active {
+		background-color: #eb2b2b;
+	}
+}
+
+.main {
+	background: #fff url('../img/bg.png') center center no-repeat;
+	background-size: cover;
+	color: white;
+	a {
+		color: white;
+	}
+}
+
+.header {
+	text-align: center;
+	height: 70px;
+	background-color: #3d77bc;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+	a {
+		display: block;
+	}
+	&-right {
+		text-align: right;
+	}
+}
+
+.main-content {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.block-grad {
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	padding: 77px 0;
+	font-size: 34px;
+	background-image: linear-gradient(to top, #3d77bc 0%, #3dbcb7 100%);
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+	}
+}
