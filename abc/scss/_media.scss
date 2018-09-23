@@ -1,0 +1,158 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.block2-content h3 {
+    font-size: 24px;
+}
+
+.block3 {
+    img {
+        width:280px;
+    }
+}
+
+.block4-title {
+    h2 {
+        font-size: 25px;
+        margin-left: 65px;
+    }
+    span {
+        display: block;
+        margin-left: 65px;
+    }
+    img {
+        left: -30px;
+    }
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
+}
+.block6 {
+    &-container {
+        .letter:after {
+            width:80%;
+        }
+    }
+}
+
+.block7-slider {
+    padding: 0 50px;
+}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+.block4 {
+    &-title {
+        text-align: center;
+        h2 {
+            margin: 0;
+        }
+        span {
+            margin: 0;
+        }
+        p {
+            margin-top: 15px;
+            padding: 0 150px;
+        }
+    }
+    &-content_card {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width:75%;
+        .centr {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            left: 0;
+            top: 0;
+            transform: translate(0, 0);
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+.block6 {
+    &-container {
+        .letter::after {
+            left:225px;
+        }
+        .letter-resp::after {
+            display: none;
+        }
+    }
+}
+
+.line-bold {
+    background-size: contain;
+}
+
+.footer {
+    p {
+        margin-top: 40px;
+    }
+    .tel {
+        padding-bottom: 0;
+    }
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        br {
+            display: none;
+        }
+    }
+    .block3 {
+        padding-bottom: 0;
+    }
+
+    .block4 {
+        padding-bottom: 20px;
+    }
+
+    .block4-title {
+        img {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+            top: 0;
+        }
+        p {
+            padding: 0;
+        }
+    }
+
+    .block6 {
+        &-container {
+            .letter::after {
+                display: none;
+            }
+        }
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
