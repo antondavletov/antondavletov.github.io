@@ -1,0 +1,621 @@
+@font-face {
+  font-family: "circe-exb";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Circe/Circe-ExtraBold.eot");
+  src: url("../fonts/Circe/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe/Circe-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "circe-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Circe/Circe-Bold.eot");
+  src: url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-1";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-100.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-3";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-7";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "circe-exb";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Circe/Circe-ExtraBold.eot");
+  src: url("../fonts/Circe/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe/Circe-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "circe-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Circe/Circe-Bold.eot");
+  src: url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-1";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-100.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-3";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mus-7";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+}
+
+custom-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding-top: 2px;
+  border: none;
+  border-bottom: 3px solid #1d9e38;
+  border-radius: 6px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  background: #0ca646;
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #0ca646), to(#2ed05d));
+  background: linear-gradient(to right, #0ca646 25%, #2ed05d);
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(36, 175, 66, 0.25);
+          box-shadow: 0px 4px 13px 0px rgba(36, 175, 66, 0.25);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+button,
+button:active,
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button:focus, input:focus, link:focus, textarea:focus {
+  outline: none;
+}
+
+button:active, input:active, link:active, textarea:active {
+  outline: none;
+}
+
+button:hover, input:hover, link:hover, textarea:hover {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  min-width: 320px;
+  line-height: 1.4;
+  font-family: "circe-exb";
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}
+
+.main {
+  background: url("../img/main-bg.jpg") center center no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 230px;
+  margin-bottom: 230px;
+  padding: 20px 30px;
+  font-size: 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#009158), to(#2f4858));
+  background-image: linear-gradient(to right, #009158 0%, #2f4858 100%);
+}
+
+.part-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 15px 0;
+  font-size: 22px;
+  font-family: "circe-exb";
+}
+
+.line-bold {
+  display: block;
+  height: 10px;
+  background-image: url("../img/linebold.png");
+  background-size: cover;
+  margin: 45px 0;
+}
+
+.line-short {
+  width: 160px;
+  height: 3px;
+  margin: 30px auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#009158), to(#2f4858));
+  background-image: linear-gradient(to right, #009158 0%, #2f4858 100%);
+}
+
+.block2 {
+  text-align: center;
+}
+
+.block2 span {
+  display: block;
+  font-size: 18px;
+  font-family: "circe-bold";
+}
+
+.block2 span a {
+  text-decoration: underline;
+}
+
+.block2-content h3 {
+  font-family: "mus-7";
+  font-size: 26px;
+  margin-top: 15px;
+}
+
+.block2-content p {
+  font-family: "mus-1";
+  font-size: 20px;
+}
+
+.block3 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.block3 img {
+  margin-top: 15px;
+  -webkit-box-shadow: 0 3px 28px 7px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 3px 28px 7px rgba(0, 0, 0, 0.14);
+}
+
+.block3 .line-bold {
+  margin: 100px 0 50px 0;
+}
+
+.block4 {
+  padding-bottom: 150px;
+}
+
+.block4-title h2 {
+  position: relative;
+  margin-left: 30px;
+}
+
+.block4-title img {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  left: -100px;
+  top: -40px;
+}
+
+.block4-title span {
+  font-family: "circe-bold";
+  margin-left: 30px;
+}
+
+.block4-title p {
+  font-family: "mus-3";
+  font-size: 20px;
+}
+
+.block4-content {
+  margin-top: 50px;
+  background: url("../img/beer1bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.block4-content_card {
+  text-align: center;
+  padding: 40px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 35px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 7px 35px rgba(0, 0, 0, 0.13);
+}
+
+.block4-content_card .line-card {
+  width: 100%;
+  height: 1px;
+  background-color: #acacac;
+}
+
+.block4-content_card p {
+  font-size: 18px;
+  font-family: "mus-1";
+}
+
+.block4-content_card .centr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.block4-content_card img {
+  margin: 0 auto;
+}
+
+.block4-content-bg2 {
+  background: url("../img/beer2bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.block6 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  background: url("../img/howwework-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.block6 .line-short {
+  background-color: #fff;
+  background-image: none;
+}
+
+.block6 a {
+  position: relative;
+  margin-top: 90px;
+  max-width: 292px;
+  width: 100%;
+  color: #000;
+  display: inline-block;
+  padding: 18px 0;
+  -webkit-box-shadow: 0 2px 0 #dc9229;
+          box-shadow: 0 2px 0 #dc9229;
+  border-radius: 35px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f7a74a), to(#eae323));
+  background-image: linear-gradient(to top, #f7a74a 0%, #eae323 100%);
+  -webkit-transition: all ease .1s;
+  transition: all ease .1s;
+}
+
+.block6 a span {
+  position: relative;
+  z-index: 2;
+}
+
+.block6 a:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 60px;
+  background: #fff;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.block6 a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f5af45;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.block6 a:hover:before {
+  opacity: 1;
+}
+
+.block6 .btn-down {
+  margin-top: 10px;
+  font-family: "mus-1";
+  opacity: .8;
+}
+
+.block6-container .letter {
+  font-size: 132px;
+}
+
+.block6-container .letter::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("../img/howweworkline.png") center center no-repeat;
+  width: 100%;
+  height: 6px;
+  top: 85px;
+  left: 140px;
+}
+
+.block6-container .letter-after::after {
+  display: none;
+}
+
+.block6-container p {
+  font-size: 22px;
+  font-family: "mus-3";
+}
+
+.block7 {
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  background: url("../img/ourbeer-bg.jpg");
+  background-size: cover;
+}
+
+.block7 .line-short {
+  background-color: #fff;
+  background-image: none;
+}
+
+.block7-slider {
+  padding: 0 150px;
+}
+
+.block7-slider img {
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 10px solid #fff;
+}
+
+.block8 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.block8-item {
+  padding: 20px 0;
+}
+
+.footer {
+  padding: 35px 0;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #eaa12d 0%, #000000 100%), linear-gradient(-45deg, #4a8bf7 0%, #eaa12d 100%);
+}
+
+.footer .logo {
+  padding: 30px 0;
+}
+
+.footer .win {
+  margin-left: 40px;
+}
+
+.footer p {
+  font-family: "mus-1";
+}
+
+.footer .tel {
+  font-size: 24px;
+  padding: 35px 0;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .block2-content h3 {
+    font-size: 24px;
+  }
+  .block3 img {
+    width: 280px;
+  }
+  .block4-title h2 {
+    font-size: 25px;
+    margin-left: 65px;
+  }
+  .block4-title span {
+    display: block;
+    margin-left: 65px;
+  }
+  .block4-title img {
+    left: -30px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .block6-container .letter:after {
+    width: 80%;
+  }
+  .block7-slider {
+    padding: 0 50px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .block4-title {
+    text-align: center;
+  }
+  .block4-title h2 {
+    margin: 0;
+  }
+  .block4-title span {
+    margin: 0;
+  }
+  .block4-title p {
+    margin-top: 15px;
+    padding: 0 150px;
+  }
+  .block4-content_card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 75%;
+  }
+  .block4-content_card .centr {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .block4-content_card img {
+    margin: 0 auto;
+  }
+  .block6-container .letter::after {
+    left: 225px;
+  }
+  .block6-container .letter-resp::after {
+    display: none;
+  }
+  .line-bold {
+    background-size: contain;
+  }
+  .footer p {
+    margin-top: 40px;
+  }
+  .footer .tel {
+    padding-bottom: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  h1 br {
+    display: none;
+  }
+  .block3 {
+    padding-bottom: 0;
+  }
+  .block4 {
+    padding-bottom: 20px;
+  }
+  .block4-title img {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+  }
+  .block4-title p {
+    padding: 0;
+  }
+  .block6-container .letter::after {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* Custom, iPhone Retina */
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+@import "fonts";
+// colors
+
+$black: black;
+
+// main 
+$font-default: 'circe-exb'; 
+$font-default-bold: 'circe-bold';
+$font-mus1: 'mus-1';
+$font-mus3: 'mus-3';
+$font-mus7: 'mus-7';
+
+
+// mixins
+
+@mixin center_transform() {
+  	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%, -50%);
+}
+
+@mixin vertical_center_transform() {
+  	position:absolute;
+	left:0;top:50%;
+	width: 100%;
+	transform:translate(0, -50%);
+}
+
+// buttons 
+
+custom-btn {
+	display: block;
+    width: 100%;
+    height: 60px;
+    padding-top: 2px;
+    border: none;
+    border-bottom: 3px solid #1d9e38;
+    border-radius: 6px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    background: #0ca646;
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #0ca646), to(#2ed05d));
+    background: linear-gradient(to right, #0ca646 25%, #2ed05d);
+    box-shadow: 0px 4px 13px 0px rgba(36, 175, 66, 0.25);
+	transition: ease 0.3s;
+}
