@@ -1,0 +1,27 @@
+@import "fonts";
+// colors
+
+$black: black;
+
+// main 
+$font-default: 'circe-exb'; 
+$font-default-bold: 'circe-bold';
+$font-mus1: 'mus-1';
+$font-mus3: 'mus-3';
+$font-mus7: 'mus-7';
+
+
+// mixins
+
+@mixin center_transform() {
+  	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%, -50%);
+}
+
+@mixin vertical_center_transform() {
+  	position:absolute;
+	left:0;top:50%;
+	width: 100%;
+	transform:translate(0, -50%);
+}

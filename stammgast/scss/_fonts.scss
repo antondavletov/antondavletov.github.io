@@ -1,0 +1,11 @@
+@import "mixins";
+
+@include font-face("circe-exb", "../fonts/Circe/Circe-ExtraBold");
+@include font-face("circe-bold", "../fonts/Circe/Circe-Bold");
+
+@include font-face("mus-1", "../fonts/MuseoSans/MuseoSansCyrl-100");
+@include font-face("mus-3", "../fonts/MuseoSans/MuseoSansCyrl-300");
+@include font-face("mus-7", "../fonts/MuseoSans/MuseoSansCyrl-700");
+
+
+
