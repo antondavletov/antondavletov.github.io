@@ -1,0 +1,10 @@
+@import "mixins";
+
+@include font-face("cg", "../fonts/CentGothic/CenturyGothic");
+@include font-face("cgb", "../fonts/CentGothicBold/CenturyGothic-Bold", bold);
+@include font-face("lato-regular", "../fonts/LatoReg/Lato-Regular");
+@include font-face("lato-light", "../fonts/LatoLight/Lato-Light");
+@include font-face("yeseva", "../fonts/Yeseva/YesevaOne-Regular");
+
+
+
