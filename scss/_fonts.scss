@@ -1,0 +1,10 @@
+@import "mixins";
+
+@include font-face("gp", "../fonts/GothamPro");
+@include font-face("gpb", "../fonts/GothamPro-Bold", bold);
+@include font-face("gpl", "../fonts/GothamPro-Light");
+@include font-face("gpm", "../fonts/GothamPro-Medium");
+@include font-face("gpbl", "../fonts/GothamPro-Black", bold);
+@include font-face("gpi", "../fonts/GothamPro-Italic");
+
+
