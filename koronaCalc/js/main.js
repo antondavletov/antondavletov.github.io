@@ -9,6 +9,7 @@ $(document).ready(function() {
 		adaptiveHeight: true,
 		adaptiveHeightSpeed: 0,
 		touchEnabled: false,
+		caption: true,
 		pager: false,
 		nextSelector: '.btn-next-container',
 		nextText: '<div class="btn-next"><span>Далее</span></div>',
@@ -23,11 +24,11 @@ $(document).ready(function() {
 			$('.btn-next-container').addClass('btn-next-container_active');
 			$('.btn-next').addClass('btn-next_active btn-shine');
 		},
-		onSlideNext: function (currentIndex) { 	
-			
+		onSlideNext: function () { 	
+			testSlider.redrawSlider();
 		},
-		onSlidePrev: function () { 
-			
+		onSlideBefore: function () { 
+
 		},
 		onSlideAfter: function (slideElement, oldIndex, newIndex) {
 			/// АКТИВАЦИЯ СЛАЙДЕРА моделей
@@ -36,9 +37,9 @@ $(document).ready(function() {
 			// активация кнопок
 			// $('.btn-next-container').removeClass('btn-next-container_active');
 			// $('.btn-next').removeClass('btn-next_active btn-shine');
+			
 			$('.step-title__item').eq(oldIndex).removeClass('step-title__item-active');
 			$('.step-title__item').eq(newIndex).addClass('step-title__item-active');
-
 			// изменение полосы загрузки
 
 			// изменение шага
@@ -50,29 +51,30 @@ $(document).ready(function() {
 			// console.log(toTopDoc);
 
 			$(toTopDoc).animate({scrollTop: 0}, 0);
+			
 
-		}
+		},
 	});
 
 	// testSlider.goToSlide(4);
-
+	
 	var stepButton1 = $('.btn-next-container-step1 > .bx-next');
-	console.log(stepButton1);
-
-	stepButton1.on('click', function(event){
-		
+	
+	stepButton1.on('touchstart click', function () { 
 		$('.slider-models').slick({
+			adaptiveHeight: true,
+			draggable: false,
 			infinite: true,
 			arrow: true,
 			autoplay: false,
 			slidesToShow: 1,
-			slidesToScroll: 1
+			slidesToScroll: 1,
 		});
-
-		testSlider.goToSlide(1);
 		testSlider.redrawSlider();
 		console.log('Кнопка Далее 1ый слад и переход на 2й')
-	})	
+	})
+
+		
 
 // ВЫБОР ТИПА проверка ============================================================
 	
@@ -227,11 +229,11 @@ $(document).ready(function() {
 	// 	testSlider.goToSlide(2);
 	// 	$('.slider-models').slick('unslick');
 	// })
-	bxPrev2.on('click', function(){
+	bxPrev2.on('click touchstart', function(){
 		console.log('назад');
 		$('.slider-models').slick('unslick');
 	});
-	bxPrev3.on('click', function (event) {
+	bxPrev3.on('click touchstart', function (event) {
 		event.preventDefault();
 		console.log('размер назад')
 		$('.slider-models').slick();
