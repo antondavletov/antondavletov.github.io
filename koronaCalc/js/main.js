@@ -65,7 +65,6 @@ $(document).ready(function() {
 			infinite: true,
 			arrow: true,
 			autoplay: false,
-			responsive: true,
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
