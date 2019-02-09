@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="34" viewBox="0 0 279 34">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 34.52px;
+        fill: #939495;
+        font-family: "Gotham Pro";
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text id="мебелькорона" class="cls-1" transform="translate(-3.289 27.608) scale(1.109 1.109)">мебель<tspan class="cls-2">корона</tspan></text>
+</svg>
