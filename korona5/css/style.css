@@ -1,0 +1,75 @@
+input.error { border-color: red !important; }
+
+label.error { display: none !important; }
+
+.btn-next { display: inline-block; width: 100%;margin-top: 25px; padding: 14px 0; border-radius: 4px; border-bottom: 3px solid #d0d0d0; background: #DADADA; font-size: 14px; font-weight: bold; color: #A7A7A7; text-align: center; text-transform: uppercase; -webkit-transition: .3s; transition: .3s; position: relative; overflow: hidden; }
+.btn-next span { font-weight: inherit; position: relative; z-index: 2; }
+.btn-next span:after { content: ">"; display: inline-block; width: 15px; height: 13px; background: url("img/next-row.svg") no-repeat center; margin-left: 10px; }
+.btn-next_active {color: #000; }
+.btn-next_active span:after { background: url("img/next-row-a.svg") no-repeat center; }
+.btn-next-container { width: 100%; position: relative;}
+.btn-next-container:before { content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 5; }
+.btn-next-container_active:before { content: none; }
+
+.btn-prev-container { width: 100%; position: relative;}
+.btn-prev { display: inline-block; width: 100%; font-size: 14px; text-align: center; transition: .3s; position: relative; overflow: hidden; }
+.btn-prev:hover {color:#c55549}
+.btn-shine:after { content: ""; margin-left: 60px; width: 30px; height: 300px; background: #fff; -webkit-animation-delay: 0.05s; animation-delay: 0.05s; position: absolute; left: -40px; top: -150px; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-transition: all 0.1s; transition: all 0.1s; -webkit-animation-name: slideme; animation-name: slideme; -webkit-animation-duration: 3s; animation-duration: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+@-webkit-keyframes slideme { 0% { left: -30px; margin-left: 0px; }
+  30% { left: 110%; margin-left: 80px; }
+  100% { left: 110%; margin-left: 80px; } }
+
+@keyframes slideme { 0% { left: -30px; margin-left: 0px; }
+  30% { left: 110%; margin-left: 80px; }
+  100% { left: 110%; margin-left: 80px; } }
+.bx-next { display: inline-block; width: 100%; max-width: 170px; }
+.bx-prev { display: inline-block; width: 100%; max-width: 100px; color: #fe6f5f;font-size: 14px; margin-top:14px; margin-bottom: 14px;}
+
+.portable-test-wrapper {position: relative; }
+
+.header-line { padding: 30px 0; }
+.header-line { }
+.header-line__logo { display: block; margin-right: 35px; }
+.header-line__title { font-size: 18px; line-height: 1.33; }
+
+.main-progress { background: #F2F2F2; position: relative; }
+.main-progress__extender { position: absolute; top: 0; left: 0; bottom: 0; max-width: 100%; height: 100%; background: #ffde00; -webkit-transition: .3s; transition: .3s; }
+.main-progress__text { position: relative; width: 100%; padding: 15px 10px; font-size: 17px; text-align: center; display: none; }
+.main-progress__text_active { display: block; }
+
+.step-slide{ border-radius: 15px;}
+.step-slide__discount { font-size: 18px; font-weight: bold; padding-left: 30px; margin: -25px 0 40px 15px; background: url("img/gift.svg") no-repeat left center; }
+
+.pick-item__input { display: none; }
+.pick-item__input:checked + .pick-item__label:after { content: ""; display: block; width: 10px; height: 10px; background: #fe6f5f; border-radius: 50%; position: absolute; top: 5px; left: 5px; }
+.pick-item__input:disabled + .pick-item__label:after { content: ""; display: block; width: 10px; height: 10px;background: transparent; border-radius: 50%; position: absolute; top: 5px; left: 5px; }
+.pick-item__label { color: #fe6f5f; font-size: 17px; line-height: 1.4; position: relative; padding-left: 30px; }
+.pick-item__label:before { content: ""; display: block; width: 20px; height: 20px; border-radius: 50%; position: absolute; top: 0; left: 0; background-color: #ffaba29e;}
+
+.last-step-form { margin-top: 15px; text-align: center; width: 100%;}
+.last-step-form__label { text-align: center; display: block; font-size: 18px; margin-bottom: 5px; color: #858788}
+.last-step-form__input {color:#fe6f5f;text-align:center; margin:0 auto; display: block; width: 100%; max-width: 460px; padding: 11px 0 11px 0; margin-bottom: 10px; border: 1px solid transparent; font-size: 18px; border-radius: 3px; background: #fe6f5f36 url("img/phone.png") no-repeat left 20px center; }
+.last-step-form__input::placeholder {color:#fe6f5f}
+.last-step-form__button { margin: 0 auto; display: block; width: 100%; max-width: 460px; padding: 25px 0; border-radius: 4px; border: 0; border-bottom: 3px solid #d0d0d0; background: #DADADA; font-size: 18px; font-weight: bold; color: #000; text-align: center; text-transform: uppercase; -webkit-transition: .3s; transition: .3s; position: relative; overflow: hidden; margin-bottom: 10px; cursor: pointer; }
+.last-step-form__button span { font-weight: inherit; position: relative; z-index: 2; }
+.last-step-form__button:hover { background: rgb(211, 210, 210); }
+.last-step-form__accept { text-align: center; font-size: 12px; color:#858788; font-family: "gp";}
+.last-step-form__accept a { color: inherit; text-decoration: underline; }
+
+.after-submit {  }
+.after-submit__title {color:#fff; padding-top: 80px; font-size: 28px; font-weight: bold; margin-bottom: 10px; background: url("img/done.png") no-repeat top center; text-align: center; }
+.after-submit__descr { font-family: 'gpl'; font-size: 18px; text-align: center; color: #fff;}
+.after-submit__descr a { font-family: 'gpl'; color: #fff; text-decoration: underline; }
+
+.test-modal-button { display: block; width: 100%; max-width: 330px; height: 66px; border-radius: 4px; overflow: hidden; border: 0; background: #09B677; font-size: 18px; font-weight: bold; position: relative; cursor: pointer; text-transform: uppercase; color: #FFF; -webkit-transition: .3s; transition: .3s; }
+.test-modal-button:hover { background: #089E67; }
+.test-modal-button span:after { content: ""; display: inline-block; width: 23px; height: 23px; background: url("img/form-w.svg") no-repeat center; margin: 0 0 -5px 10px; }
+
+.arcticmodal-container { -webkit-overflow-scrolling: touch; overflow-y: scroll; }
+
+select {
+  max-width: 320px;
+  width: 100%;
+  padding: 5px 10px;
+}
