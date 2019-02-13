@@ -1384,7 +1384,7 @@ select option {
     text-align: left;
   }
   .imgradio img, .imgradio2 img {
-    margin: -20px auto;
+    margin: 0px auto;
   }
   .test-slider .pick-item__label {
     font-size: 16px;

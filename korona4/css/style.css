@@ -38,7 +38,7 @@ label.error { display: none !important; }
 .main-progress__text { position: relative; width: 100%; padding: 15px 10px; font-size: 17px; text-align: center; display: none; }
 .main-progress__text_active { display: block; }
 
-.step-slide{ border-radius: 15px; padding: 0 40px 40px 40px;}
+.step-slide{ border-radius: 15px;}
 .step-slide__discount { font-size: 18px; font-weight: bold; padding-left: 30px; margin: -25px 0 40px 15px; background: url("img/gift.svg") no-repeat left center; }
 
 .pick-item__input { display: none; }
@@ -53,7 +53,6 @@ label.error { display: none !important; }
 .last-step-form__input::placeholder {color:#fe6f5f}
 .last-step-form__button { margin: 0 auto; display: block; width: 100%; max-width: 460px; padding: 25px 0; border-radius: 4px; border: 0; border-bottom: 3px solid #d0d0d0; background: #DADADA; font-size: 18px; font-weight: bold; color: #000; text-align: center; text-transform: uppercase; -webkit-transition: .3s; transition: .3s; position: relative; overflow: hidden; margin-bottom: 10px; cursor: pointer; }
 .last-step-form__button span { font-weight: inherit; position: relative; z-index: 2; }
-.last-step-form__button span:after { content: ""; display: inline-block; width: 23px; height: 23px; background: url("img/form.svg") no-repeat center; margin: 0 0 -5px 10px; }
 .last-step-form__button:hover { background: rgb(211, 210, 210); }
 .last-step-form__accept { text-align: center; font-size: 12px; color:#858788; font-family: "gp";}
 .last-step-form__accept a { color: inherit; text-decoration: underline; }

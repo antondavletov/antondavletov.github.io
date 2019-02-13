@@ -376,6 +376,8 @@ $(document).ready(function() {
 		var radioInputsColor = $('input[name="step4"]')
 		var inputChanges = $('input[name="step44"]'); //свой вариант цвета
 		var imgStep = $('.imgradio-step4');
+		var inputChanges2 = $('input[name="step55"]'); // свой город
+		var radioInputsCity = $('input[name="step5"]');
 
 		console.log(sizes);
 		if(inputChanges.val() !== '') {
@@ -386,27 +388,24 @@ $(document).ready(function() {
 					$(imgStep).css('opacity', '0');
 					
 			}
-
 		} else {
-
 				for(i = 0; i < radioInputsColor.length; i++){
 					$(radioInputsColor[i]).checked = false;
 					$(radioInputsColor[i]).prop('disabled', false);
 					$(imgStep).css('opacity', '1');
 				}
-	
 		}
 
-		// if(sizes.val() !== '') {
+		// if(inputChanges2.val() !== '') {
 		// 	console.log('условие размер');
-		// 	for(i = 0; i < radioInputs.length; i++) {
-		// 			$(radioInputs[i]).checked = false;
-		// 			$(radioInputs[i]).prop('disabled', true);
+		// 	for(i = 0; i < inputChanges2.length; i++) {
+		// 			$(radioInputsCity[i]).checked = false;
+		// 			$(radioInputsCity[i]).prop('disabled', true);
 		// 	}
 		// } else {
-		// 		for(i = 0; i < radioInputs.length; i++){
-		// 			$(radioInputs[i]).checked = false;
-		// 			$(radioInputs[i]).prop('disabled', false);
+		// 		for(i = 0; i < inputChanges2.length; i++){
+		// 			$(radioInputsCity[i]).checked = false;
+		// 			$(radioInputsCity[i]).prop('disabled', false);
 		// 		}
 		// }
 
