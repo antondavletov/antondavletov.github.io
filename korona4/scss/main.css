@@ -776,6 +776,10 @@ body {
   padding: 40px 0;
 }
 
+.step-slide {
+  padding: 0 40px 40px 40px;
+}
+
 .step-slide__title {
   color: #fe6f5f;
   font-size: 30px;
@@ -815,7 +819,7 @@ body {
 .step-slide__step2 h4 {
   font-family: "gpb", sans-serif;
   font-size: 30px;
-  text-align: right;
+  text-align: right !important;
   color: #fe6f5f;
   margin-top: 0;
 }
@@ -825,12 +829,12 @@ body {
   border-radius: 8px;
   border: 1px solid #ffaba29e;
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   height: 35px;
   padding: 0 10px;
   opacity: 1;
   color: #fe6f5f;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #ffaba23d;
 }
 
@@ -1183,7 +1187,7 @@ select option {
     font-size: 45px;
   }
   .main h3 {
-    font-size: 16px;
+    font-size: 19px;
   }
   .main_sofa {
     width: 100%;
@@ -1193,6 +1197,7 @@ select option {
   }
   .price-title h3 {
     font-size: 18px;
+    padding: 0 20px;
   }
   .step-title {
     margin-bottom: 0;
@@ -1202,6 +1207,7 @@ select option {
   }
   .step-slide {
     padding-bottom: 0;
+    padding: 0;
   }
   .test-slider h3 {
     font-size: 22px;
@@ -1368,6 +1374,46 @@ select option {
     display: block;
     margin: 0 auto;
   }
+  .pick-item__label:before {
+    top: 2px;
+  }
+  .pick-item__input:checked + .pick-item__label:after {
+    top: 7px;
+  }
+  .test-slider h4 {
+    text-align: left;
+  }
+  .imgradio img, .imgradio2 img {
+    margin: -20px auto;
+  }
+  .test-slider .pick-item__label {
+    font-size: 16px;
+  }
+  .imgradio-step3 img, .imgradio-step4 img {
+    margin-bottom: 10px;
+  }
+  .step-slide__step2 h4 {
+    text-align: left !important;
+    margin-bottom: 10px;
+  }
+  .colormobile {
+    text-align: center;
+  }
+  .colormobile input {
+    margin: 0 auto;
+  }
+  .brmobile {
+    display: none;
+  }
+  .step2-var p {
+    font-size: 15px;
+  }
+  .step2-var .smallp {
+    font-size: 11px;
+  }
+  .slider-models__item-container img {
+    padding: 0;
+  }
   .catalog-blocks_item {
     height: 400px;
   }
@@ -1440,7 +1486,7 @@ select option {
     margin: 15px auto;
   }
   .catalog-blocks_item-last {
-    height: 450px;
+    height: 500px;
     margin-bottom: 60px;
   }
   .divans-items img {
