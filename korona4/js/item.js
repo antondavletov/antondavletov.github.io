@@ -18,18 +18,25 @@ $(document).ready(function(){
 			// первоначальные стили
 			
 		},
+		onSlideBefore: function () {
+			$('body,html').scrollTop(100);
+		},
 		onSlideAfter: function (slideElement, oldIndex, newIndex) {
 			// активация кнопок
+			
 			if (newIndex == 1) {
 			$('.btn-next-container').css('display', 'none');
 			$('.btn-prev-container').css('display', 'block');
 			} else {
 				$('.btn-next-container').css('display', 'block');
-			$('.btn-prev-container').css('display', 'none');
+				$('.btn-prev-container').css('display', 'none');
 			}
+
+			
+
 			// $('.step-title__item').eq(oldIndex).removeClass('step-title__item-active');
 			// $('.step-title__item').eq(newIndex).addClass('step-title__item-active');
-
+			
 			// изменение полосы загрузки
 
 			// изменение шага

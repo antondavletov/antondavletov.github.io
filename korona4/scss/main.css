@@ -1476,6 +1476,18 @@ select option {
   .contacts .map {
     height: 200px;
   }
+  .popup {
+    padding: 0;
+  }
+  .popup-bottom .pop-item__label {
+    font-size: 15px;
+  }
+  .main {
+    padding-bottom: 0;
+  }
+  .divans {
+    padding: 0;
+  }
   .main h1 {
     font-size: 60px;
   }

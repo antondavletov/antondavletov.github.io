@@ -47,7 +47,7 @@ label.error { display: none !important; }
 .pick-item__label { color: #fe6f5f; font-size: 17px; line-height: 1.4; position: relative; padding-left: 30px; }
 .pick-item__label:before { content: ""; display: block; width: 20px; height: 20px; border-radius: 50%; position: absolute; top: 0; left: 0; background-color: #ffaba29e;}
 
-.last-step-form { margin-top: 15px; text-align: center; width: 100%; padding-left: 15px; }
+.last-step-form { margin-top: 15px; text-align: center; width: 100%;}
 .last-step-form__label { text-align: center; display: block; font-size: 18px; margin-bottom: 5px; color: #858788}
 .last-step-form__input {color:#fe6f5f;text-align:center; margin:0 auto; display: block; width: 100%; max-width: 460px; padding: 11px 0 11px 0; margin-bottom: 10px; border: 1px solid transparent; font-size: 18px; border-radius: 3px; background: #fe6f5f36 url("img/phone.png") no-repeat left 20px center; }
 .last-step-form__input::placeholder {color:#fe6f5f}

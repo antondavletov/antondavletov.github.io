@@ -28,11 +28,11 @@
 	<section class="header">
 		<div class="container">
 			<div class="row">
-
+				
 					<nav class="pushy pushy-left">
 							<div class="pushy-content">
 								<ul>
-									<li class="pushy-link"><a href="index.html">Расчёт стоимости</a></li>
+									<li class="pushy-link"><a href="/#test">Расчёт стоимости</a></li>
 									<li class="pushy-link"><a href="catalog.html">Каталог</a></li>
 									<li class="pushy-link"><a href="#phones">Контакты</a></li>
 								</ul>
@@ -45,7 +45,7 @@
 					<div class="header-menu">
 						<button class="menu-btn menu-btn_left"><span></span></button>
 						<ul>
-							<li><a href="index.html">Расчет стоимости</a></li>
+							<li><a class="link-sroll" href="/#test">Расчет стоимости</a></li>
 							<li><a href="catalog.html">Каталог</a></li>
 							<li><a class="link-sroll" href="#phones">Контакты</a></li>
 						</ul>
@@ -58,9 +58,9 @@
 	<section class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5"><img class="main_sofa" src="img/mainsofa.png" alt=""></div>
+				<div class="col-sm-6"><img class="main_sofa" src="img/mainsofa.png" alt=""></div>
 
-				<div class="col-sm-7">
+				<div class="col-sm-6">
 					<div class="main-logo">
 						<img class="" src="img/logo.svg" alt="">
 						<img class="main-logo_2" src="img/logo2.svg	" alt="">
@@ -117,6 +117,7 @@
 									<li><a href="others.html">Пуфик</a></li>
 									<li><a href="others.html">Рама с зеркалом</a></li>
 									<li><a href="others.html">Тумбочки</a></li>
+									<li><a href="others.html">Стеновая панель</a></li>
 								</ul>
 								<img class="otherimg img-responsive" src="img/tumba2.png" alt="">
 							</div>
@@ -242,52 +243,53 @@
 					<button data-fancybox-close="" class="btn-modal-close"><img src="img/error.png" alt=""></button>
 				</form>
 			</div>
-	
-			<script src="js/jquery-1.12.4.min.js"></script>
-			<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-			<script src="js/jquery.bxslider.min.js"></script>
-			<script src="js/slick.min.js"></script>
-			<script src="js/jquery.maskedinput.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
-			<script src="js/jquery.form.js"></script>
-			<script src="js/jquery.validate.js"></script>
-			<script src="js/pushy.min.js"></script>
-			<script src="js/commom.js"></script>
 
-	<script>
-	$(document).ready(function() {
-	ymaps.ready(init);
-		
+				<script src="js/jquery-1.12.4.min.js"></script>
+				<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+				<script src="js/jquery.maskedinput.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+				<script src="js/jquery.form.js"></script>
+				<script src="js/jquery.validate.js"></script>
+				<script src="js/pushy.min.js"></script>
+				<script src="js/commom.js"></script>
+	
+		<script>
+		$(document).ready(function() {
+	
+			
+		ymaps.ready(init);
 		function init(){   
-			var myMap = new ymaps.Map("map", {
-				center: [55.724312, 37.787920],
-				zoom: 16,
-				behaviors: ['multiTouch']
+				var myMap = new ymaps.Map("map", {
+					center: [55.724312, 37.787920],
+					zoom: 16,
+					behaviors: ['multiTouch']
+				});
+			
+				myPlacemark = new ymaps.Placemark([55.724312, 37.787920],{});
+			
+				myMap.geoObjects.add(myPlacemark);
+			}
+	
+			$('#leadmagnetform').each(function(index, el) {
+				$(el).validate({
+					rules:{
+						"email":{required:true}
+					},
+					submitHandler: function(form){
+						$(form).ajaxSubmit({
+							type: 'POST',
+							url: 'mailleadmagnet.php',
+							success: function() {
+								window.location.reload(true);
+							}
+						});
+					}
+				});
 			});
 		
-			myPlacemark = new ymaps.Placemark([55.724312, 37.787920],{});
-		
-			myMap.geoObjects.add(myPlacemark);
-		}
-		
-		$('#leadmagnetform').each(function(index, el) {
-			$(el).validate({
-				rules:{
-					"email":{required:true}
-				},
-				submitHandler: function(form){
-					$(form).ajaxSubmit({
-						type: 'POST',
-						url: 'mailleadmagnet.php',
-						success: function() {
-							window.location.reload(true);
-						}
-					});
-				}
-			});
 		});
-	});
-	</script>
+		</script>
+
 
 </body>
 </html>
