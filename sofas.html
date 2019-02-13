@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Мебель Корона - Каталог</title>
+	<title>Мебель Корона - Диваны</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -78,52 +78,49 @@
 		</div>
 	</section>
 
-		<section>
+		<section class="divans">
 			<div class="container">
 				<div class="row">
-					<div class="catalog-blocks">
-						<div class="col-xs-12 col-md-6">
-							<a href="sofas.html">
-								<div class="catalog-blocks_item">
-									<h2>Диваны</h2>
-									<img class="divanimg img-responsive" src="img/divan.png" alt="">
-								</div>
-							</a>
+					<div class="col-sm-4 col-md-4">
+						<a href="sofas/graf.html">
+						<div class="divans-items divans-items_mobile">
+							<h3>Граф</h3>
+							<img class="img-responsive" src="img/sofas/graf." alt="">
+							<p>7600 ₽</p>
 						</div>
-						<div class="col-xs-12 col-md-6">
-							<a href="beds.html">
-								<div class="catalog-blocks_item">
-									<h2>Кровати</h2>
-									<img class="krovatimg img-responsive" src="img/krovat.png" alt="">
-								</div>
-							</a>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<a href="sofas/chester.html">
+						<div class="divans-items">
+							<h3>Честерфилд</h3>
+							<img class="img-responsive" src="img/sofas/1.png" alt="">
+							<p>16 000 ₽</p>
 						</div>
-						<div class="col-xs-12 col-md-6">
-							<a href="chairs.html">
-								<div class="catalog-blocks_item">
-									<img class="kresloimg" src="img/creslo.png" alt="">
-									<h2 class="kreslotitle">Кресла</h2>
-									<img class="kresloimg-mobile img-responsive" src="img/creslo.png" alt="">
-								</div>
-							</a>
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<a href="sofas/vikont1.html">
+						<div class="divans-items">
+							<h3>Виконт-1</h3>
+							<img class="img-responsive" src="img/sofas/2.png" alt="">
+							<p>6000 ₽</p>
 						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="catalog-blocks_item catalog-blocks_item-last">
-								<h2>Прочее</h2>
-								<ul>
-									<li><a href="others.html">Стулья</a></li>
-									<li><a href="others.html">Матрасы</a></li>
-									<li><a href="others.html">Банкетка</a></li>
-									<li><a href="others.html">Пуфик</a></li>
-									<li><a href="others.html">Рама с зеркалом</a></li>
-									<li><a href="others.html">Тумбочки</a></li>
-									<li><a href="others.html">Стеновая панель</a></li>
-								</ul>
-								<img class="otherimg img-responsive" src="img/tumba2.png" alt="">
-							</div>
-						</div>
+						</a>
 					</div>
 				</div>
+				<div class="row">
+						<div class="col-sm-4 col-md-4">
+							<a href="sofas/vikont2.html">
+							<div class="divans-items divans-items_mobile">
+								<h3>Виконт-2</h3>
+								<img class="img-responsive" src="img/sofas/3.png" alt="">
+								<p>7500 ₽</p>
+							</div>
+							</a>
+						</div>
+					</div>
+					
 			</div>
 		</section>
 
@@ -259,7 +256,7 @@
 	$(document).ready(function() {
 	ymaps.ready(init);
 		
-		function init(){   
+	function init(){   
 			var myMap = new ymaps.Map("map", {
 				center: [55.724312, 37.787920],
 				zoom: 16,
@@ -270,7 +267,6 @@
 		
 			myMap.geoObjects.add(myPlacemark);
 		}
-		
 		$('#leadmagnetform').each(function(index, el) {
 			$(el).validate({
 				rules:{
@@ -289,6 +285,6 @@
 		});
 	});
 	</script>
-
+	
 </body>
 </html>

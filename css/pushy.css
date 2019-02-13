@@ -18,12 +18,13 @@
   display: block;
   font-family: gpb;
   font-size: 14px;
-  color: #1d1d1d;
+  color: #fff;
   padding: 30px 30px;
   text-decoration: none;
 }
 .pushy a:hover {
   color: #FFF;
+  text-decoration: underline;
 }
 
 .pushy ul:first-child {
