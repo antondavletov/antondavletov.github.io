@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "AveB";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AveBold/AvenirNextCyr-Bold.eot");
+  src: url("../fonts/AveBold/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AveBold/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AveBold/AvenirNextCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AveR";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AveReg/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AveReg/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AveReg/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AveReg/AvenirNextCyr-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AveB";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AveBold/AvenirNextCyr-Bold.eot");
+  src: url("../fonts/AveBold/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AveBold/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AveBold/AvenirNextCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AveR";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AveReg/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AveReg/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AveReg/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AveReg/AvenirNextCyr-Regular.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+button,
+button:active,
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button:focus, input:focus, link:focus, textarea:focus {
+  outline: none;
+}
+
+button:active, input:active, link:active, textarea:active {
+  outline: none;
+}
+
+button:hover, input:hover, link:hover, textarea:hover {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  line-height: 1.3;
+  font-family: 'AveR', serif;
+  font-weight: normal;
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f2f4f5), to(#f5f5f9));
+  background-image: linear-gradient(to top, #f2f4f5 0%, #f5f5f9 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: #34365b;
+}
+
+h1, h2 {
+  font-size: 40px;
+  font-family: "AveB", serif;
+  font-weight: bold;
+}
+
+.header {
+  margin: 34px 0;
+}
+
+.header a > img {
+  max-width: 110px;
+  height: auto;
+}
+
+.main-bg img {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  top: 270px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.main {
+  margin-bottom: 160px;
+}
+
+.main a > img {
+  max-width: 150px;
+  height: auto;
+}
+
+.main a {
+  margin-right: 10px;
+}
+
+.main p {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.main h1 {
+  margin-bottom: 74px;
+}
+
+.block2 {
+  margin-bottom: 100px;
+}
+
+.block2-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.block2 h2 {
+  margin: 35px 0 30px 0;
+}
+
+.block2-ben {
+  margin-left: 30px;
+  padding-right: 160px;
+}
+
+.block2-ben h3 {
+  position: relative;
+  font-size: 18px;
+  font-family: "AveB";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.block2-ben h3:before {
+  position: absolute;
+  left: -28px;
+  top: 3px;
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #2d1aff;
+}
+
+.block2-ben p {
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.block3 {
+  text-align: center;
+}
+
+.block3 h2 {
+  margin-bottom: 60px;
+}
+
+.block3-steps {
+  margin-bottom: 57px;
+}
+
+.block3-steps_cont {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 46px 45px;
+  -webkit-box-shadow: 19px 23px 36px 4px rgba(0, 0, 0, 0.03);
+          box-shadow: 19px 23px 36px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.block3-steps_cont p {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #34365b;
+}
+
+.block5 {
+  margin-bottom: 90px;
+}
+
+.block5 h2 {
+  margin-top: 100px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.block5 p {
+  margin-top: 20px;
+  padding-right: 35px;
+  color: #34365b;
+}
+
+.footer {
+  margin-bottom: 90px;
+}
+
+.footer-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer a > img {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: .8;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-family: "AveB";
+  font-weight: bold;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/*# sourceMappingURL=main.css.map */
